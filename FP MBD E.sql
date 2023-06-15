@@ -338,3 +338,10 @@ END;
 $$ LANGUAGE PLPGSQL;
 
 SELECT * FROM search_buku_by_judul_and_tahun('Harry Potter', '2005-07-16');
+
+-- Bukti Hak Akses
+
+---Pembuktian hak akses Anggota dalam menginsert / menambahkan anggota baru ke dalam table anggota
+SET ROLE anggota;
+
+INSERT INTO Anggota (ID_Anggota, Nama, Alamat, Email, ID_Tipe_Anggota) VALUES  ('A011', 'Raihan Hidayat', 'Jayamukti Central Cikarang', 'raihanhidayat@gmail.com', 'T003');
