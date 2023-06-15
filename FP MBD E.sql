@@ -339,6 +339,7 @@ $$ LANGUAGE PLPGSQL;
 
 SELECT * FROM search_buku_by_judul_and_tahun('Harry Potter', '2005-07-16');
 
+
 -- Bukti Hak Akses
 
 ---Pembuktian hak akses Anggota dalam menginsert / menambahkan anggota baru ke dalam table anggota
